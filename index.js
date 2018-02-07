@@ -22,5 +22,7 @@ class Driver {
 }
 
 class Passenger {
-  constructor(name)
+  constructor(name){
+    
+  }
 }
