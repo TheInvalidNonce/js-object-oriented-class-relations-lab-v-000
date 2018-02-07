@@ -8,7 +8,7 @@ class Driver {
     this.name = name
   }
   
-  store.drivers.push(driver)
+  store.drivers.push(this)
   
   trips() {
     
