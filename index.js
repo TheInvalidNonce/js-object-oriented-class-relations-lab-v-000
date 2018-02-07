@@ -58,7 +58,7 @@ class Trip {
   
   driver() {
     return store.drivers.filter(driver => {
-      return driver.tripId === this.id
+      return driver.id === this.id
     })
   }
   
