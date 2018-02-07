@@ -17,6 +17,7 @@ class Driver {
      })
   }
   passengers() {
+    // returns all of the passengers that a driver has taken on a trip
     return this.trips().map(trip => {
       return trip.passenger()
     })
