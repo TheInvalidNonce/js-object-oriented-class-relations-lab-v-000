@@ -35,8 +35,8 @@ class Passenger {
   }
   
   trips() {
-    return store.trips.filter(el => {
-      return el.passengerId === this.id
+    return store.trips.filter(el => { // Find all trips
+      return el.passengerId === this.id // That match this(passenger).id
     })
   }
   drivers() {
