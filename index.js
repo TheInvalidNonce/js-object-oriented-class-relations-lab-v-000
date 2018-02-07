@@ -18,7 +18,7 @@ class Driver {
   }
   passengers() {
     // returns all of the passengers that a driver has taken on a trip
-    return this.trips().map(el => { // Map all (driver).trips()
+    return this.trips().map(el => { // Map all (Driver).trips()
       return el.passenger() // Returning each (trips).passenger()
     })
   }
@@ -42,7 +42,7 @@ class Passenger {
   }
   drivers() {
     // returns all of the drivers that has taken a passenger on a trip
-    return this.trips().map(el => { // Map all (passenger).trips()
+    return this.trips().map(el => { // Map all (Passenger).trips()
       return el.driver() // Returning each (trips).driver()
     })
   }
