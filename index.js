@@ -59,15 +59,15 @@ class Trip {
   
   driver() {
     // returns the driver associated with the trip
-    return store.drivers.find(driver => { // Find the first driver
+    return store.drivers.find(driver => { // Find the specific driver
       return driver.id === this.driverId  // Whose driver.id === this(trip).driverID
     })
   }
   
   passenger() {
     // returns the passenger associated with the trip
-    return store.passengers.find(passenger => {
-      return passenger.id === this.passengerId
+    return store.passengers.find(passenger => { // Find the specific passenger
+      return passenger.id === this.passengerId // Whose passenger.id === this(trip).passengerId
     }) 
   }
 }
