@@ -11,6 +11,7 @@ class Driver {
   }
   
   trips() {
+    // returns all of the trips that a driver has taken
      return store.trips.filter(trip => {
        return trip.driverId === this.id
      })
