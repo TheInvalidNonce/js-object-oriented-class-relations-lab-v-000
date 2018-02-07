@@ -58,6 +58,7 @@ class Trip {
   }
   
   driver() {
+    // returns the driver associated with the trip
     return store.drivers.find(driver => {
       return driver.id === this.driverId
     })
