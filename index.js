@@ -12,8 +12,8 @@ class Driver {
   
   trips() {
     // returns all of the trips that a driver has taken
-     return store.trips.filter(trip => {
-       return trip.driverId === this.id
+     return store.trips.filter(el => { // Find all trips
+       return el.driverId === this.id // That match 
      })
   }
   passengers() {
@@ -35,8 +35,8 @@ class Passenger {
   }
   
   trips() {
-    return store.trips.filter(trip => {
-      return trip.passengerId === this.id
+    return store.trips.filter(el => {
+      return el.passengerId === this.id
     })
   }
   drivers() {
@@ -59,15 +59,15 @@ class Trip {
   
   driver() {
     // returns the driver associated with the trip
-    return store.drivers.find(driver => { // Find the specific driver
-      return driver.id === this.driverId  // Whose driver.id === this(trip).driverID
+    return store.drivers.find(el => { // Find the specific driver
+      return el.id === this.driverId  // Whose driver.id === this(trip).driverID
     })
   }
   
   passenger() {
     // returns the passenger associated with the trip
-    return store.passengers.find(passenger => { // Find the specific passenger
-      return passenger.id === this.passengerId // Whose passenger.id === this(trip).passengerId
+    return store.passengers.find(el => { // Find the specific passenger
+      return el.id === this.passengerId // Whose passenger.id === this(trip).passengerId
     }) 
   }
 }
