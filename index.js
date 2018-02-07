@@ -13,7 +13,7 @@ class Driver {
   trips() {
     // returns all of the trips that a driver has taken
      return store.trips.filter(el => { // Find all trips
-       return el.driverId === this.id // That match 
+       return el.driverId === this.id // That match this(driver).id
      })
   }
   passengers() {
