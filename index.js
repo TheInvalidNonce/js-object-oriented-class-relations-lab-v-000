@@ -17,7 +17,7 @@ class Driver {
   }
   passengers() {
     return store.passengers.map(passenger => {
-      return passenger.id
+      return passenger.driverId
     })
     
   }
