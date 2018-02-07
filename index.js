@@ -35,6 +35,7 @@ class Passenger {
   }
   
   trips() {
+    // returns all of the trips that a passenger has taken
     return store.trips.filter(el => { // Find all trips
       return el.passengerId === this.id // That match this(passenger).id
     })
