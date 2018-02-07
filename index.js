@@ -13,4 +13,12 @@ class Driver {
   trips() {
     
   }
+  
+  passengers(){
+    
+  }
+}
+
+class Passenger {
+  constructor(name)
 }
