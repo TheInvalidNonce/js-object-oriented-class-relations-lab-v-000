@@ -16,7 +16,7 @@ class Driver {
      })
   }
   passengers() {
-    return store.passengers.filter(passenger => {
+    return store.passengers.map(passenger => {
       return passenger.driverId
     })
     
